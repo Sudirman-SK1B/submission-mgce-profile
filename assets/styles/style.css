@@ -1,0 +1,189 @@
+/* Import the Google Fonts CSS */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+/* Reset box-sizing and set default styles */
+ *{
+    box-sizing: border-box;
+ }
+
+ /* Set the font-family for the entire document */
+ body {
+    font-family: 'Arimo', sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+
+ /* Style for h2 elements */
+ h2 {
+    color: grey;
+ }
+
+ /* Style for footer */
+ footer {
+    padding: 10px;
+    color: white;
+    background-color: #41370e;
+    text-align: center;
+    font-weight: bold;
+ }
+
+ /* Style for the navigation bar */
+ nav {
+    background-color: #41370e;
+    padding: 1px;
+    position: sticky;
+    top: 0;
+    transition: all 0.3s;
+ }
+
+ /* Style for navigation links */
+ nav ul {
+    padding-inline: auto;
+    display: flex;
+    gap: 2rem;
+ }
+
+ nav li {
+    list-style-type: none;
+ }
+
+ nav a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+ }
+
+ nav a:hover {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+
+ }
+
+ .text-box {
+    font-size: 25px;
+    padding: 60px;
+    background-color: #49483e;
+    text-align: left;
+    color: white;
+ }
+ /* Style for .profile header */
+ .profile header {
+    text-align: center;
+ }
+
+
+/* Style for .profile img */
+ .profile img {
+    width: 200px;
+    height: auto;
+    border-radius: 10%;
+ }
+
+ /* Style for .card */
+ .card {
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+ }
+
+ .button {
+    text-decoration: none;
+    padding: 1px;
+    font-size: 20px;
+    font-weight: 200;
+    background-color: #41370e;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+ }
+
+ .button:hover {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+ }
+ /* Style for main content area */
+ main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+ }
+
+ /* Style for #content */
+ #content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+ }
+
+ /* Style for text alignment */
+ .text-align {
+   text-align: justify;
+ }
+
+ .text-center {
+   text-align: center;
+ }
+
+ main aside .social-media  th a {
+   text-decoration: none;
+   font-size: 2rem;
+   color: rgb(69, 47, 47);
+   transition: all .1s ease-in-out;
+   padding: 1.5rem 0.5rem;
+   margin: auto;
+
+}
+
+main aside .social-media td a {
+   text-decoration: none;
+   color: #41370e;
+}
+
+main aside .social-media a:hover {
+   color: #4a739f;
+   font-weight: bold;
+}
+ /* Style for aside */
+ aside {
+   flex: 2;
+ }
+
+ /* Style for header elements */
+ header {
+    display: inline;
+ }
+
+
+ /* Media queries for responsive design */
+ @media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    
+    main aside {
+        align-self: center;
+    }
+ }
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main aside {
+      align-self: stretch;
+    }
+
+}
